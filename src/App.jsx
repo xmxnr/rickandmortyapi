@@ -49,7 +49,7 @@ function App() {
 	) : (
 		<div className="body">
 			<header className="hero">
-				<img src="../public/images.png" alt="rickandmortylogo" />
+				<img src="/images.png" alt="rickandmortylogo" />
 			</header>
 			<form onSubmit={handleSubmit}>
 				<input
