@@ -1,0 +1,20 @@
+.body{
+    min-height: 100vh;
+    background-color: #315c2b;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color:#315c2b;
+
+}
+
+::-webkit-scrollbar{
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    
+    background-color: #75dddd;
+    border-radius: 15px;
+}

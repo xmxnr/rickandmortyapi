@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--principal-color: #315c2bb6;
+	--secondary-color: #98ce00;
+	--bg--color: #75ddddcc;
+	--font--color: aliceblue;
+}
+
+* {
+	color: aliceblue;
+	margin: 0;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+.flex__container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__container {
+	max-width: 350px;
+	background-color: var(--bg--color);
+	border-radius: 15px;
+	box-shadow: -8px -9px 39px -7px rgba(0, 0, 0, 0.34);
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	transition: 0.6s ease-in-out;
+	z-index: 3;
+
+	@media (min-width: 568px){
+		&:hover {
+			scale: 1.3;
+			overflow: hidden;
+			z-index: 5;
+			background-color: #75dddd;
+			transition: all 0.6s ease-in-out;
+			box-shadow: 10px 10px 59px -7px rgba(255, 255, 255, 0.425);
+		}
+		
+	}
+
+	header {
+		position: relative;
+		img {
+			min-width: 350px;
+			border-radius: 15px;
+		}
+
+		.card__status {
+			font-family: 'Poppins', sans-serif;
+			width: 6rem;
+			border-radius: 0 5px;
+			background-color: #fffc31a4;
+			position: absolute;
+			top: 0.5rem;
+			left: 0px;
+			color: black;
+			text-align: center;
+		}
+
+		.card__id{
+			font-family: 'Poppins', sans-serif;
+			width: 6rem;
+			border-radius: 5px 0;
+			background-color: #fffc31a4;
+			position: absolute;
+			top: 0.5rem;
+			right: 0px;
+			color: black;
+			text-align: center;
+		}
+	}
+
+	.card__information {
+		width: 100%;
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+
+		.card__name {
+			width: 35%;
+			font-family: 'Fruktur', sans-serif;
+			text-align: center;
+			font-size: 1.4em;
+			color: var(--principal-color);
+		}
+
+		ul {
+			max-width: 65%;
+			list-style: none;
+			font-size: 0.9rem;
+
+			.li__title {
+				font-size: 0.8rem;
+				font-family: 'Fruktur';
+			}
+
+			.li__text {
+				font-family: 'Poppins';
+				font-size: 0.7rem;
+			}
+		}
+	}
+}

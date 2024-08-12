@@ -1,0 +1,61 @@
+* {
+	scroll-behavior: smooth;
+	scrollbar-color: black;
+}
+
+.body {
+	width: 100%;
+	background-color: #315c2b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.hero {
+		min-height: 10vh;
+		margin-bottom: 30px;
+	}
+
+	input {
+		border-radius: 15px;
+		color: black;
+		width: 50vw;
+		height: 3vh;
+		border: none;
+		text-align: center;
+		font-family: 'poppins' sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 1.3rem;
+		box-shadow: inset 6px 6px 6px -3px rgba(0,0,0,0.35);
+	}
+
+	button {
+		border-radius: 15px;
+		width: 15vw;
+		height: 3vh;
+		color: rgb(12, 12, 12);
+		border: none;
+		font-family: 'Poppins', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		box-shadow: inset 6px 6px 6px -3px rgba(0,0,0,0.35);
+		margin-left: 5px;
+		transition: all 0.6s ease-in-out;
+
+		&:hover{
+			background-color: #3de0276b;
+			color: aliceblue;
+			transition: all 0.6s ease-in-out;
+		}
+	}
+}
+
+.cards__container {
+	height: 100%;
+	/* min-width: 100%; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding: 2rem;
+}
